@@ -4,10 +4,9 @@
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-      src: /path/on/remote/MavenAnsible.war
-      dest: /path/on/remote/tomcat/webapps/
-      remote_src: yes
-
+        src: /path/on/remote/MavenAnsible.war
+        dest: /path/on/remote/tomcat/webapps/
+        remote_src: yes
 
     - name: Restart Tomcat
       systemd:
