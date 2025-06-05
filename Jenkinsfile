@@ -24,7 +24,7 @@ pipeline {
 
      stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'target/maven89.war', fingerprint:true
+                archiveArtifacts artifacts: 'target/*.war', fingerprint:true
             }
         }
         stage('Deploy') {
