@@ -4,7 +4,7 @@
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: admin:///opt/tomcat/webapps/maven89.war
+        src: /Desktop/maven89/target/maven89
         dest: /path/on/remote/tomcat/webapps/
         remote_src: yes
 
