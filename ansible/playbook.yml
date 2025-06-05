@@ -4,7 +4,7 @@
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: /path/on/remote/opt/tomcat/webapps/MavenAnsible.war
+        src: admin:///opt/tomcat/webapps/maven89.war
         dest: /path/on/remote/tomcat/webapps/
         remote_src: yes
 
